@@ -1,0 +1,216 @@
+/* importo fuentes*/
+
+@import url('https://fonts.googleapis.com/css2? family=Titillium+Web:ital,wght@0,200;0,600;1,200;1,300&family=Xanh+Mono:ital@1&display=swap');
+*{
+  font-family:"Titillium Web";
+  margin: 0;
+  padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Seccion inicio*/
+
+.inicio {
+    background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,-3)), url("fondo5.png");
+    background-size: cover;
+    background-position: center center;
+    color: black;
+}
+
+.inicio .contenido {
+    max-width: 1000px;
+    margin: auto ;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.inicio .contenido header {
+    padding: 30px;
+}
+
+.inicio .contenido header nav {
+    position: fixed;
+    margin-left: 60px;
+    background-color:dodgerblue;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+    z-index: 99;
+    display: none;
+}
+
+.inicio .contenido header nav a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.inicio .contenido header .barra-nav {
+    position: fixed;
+    background-color:dodgerblue;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.inicio .contenido header .barra-nav:hover {
+    box-shadow: 0 0 35px #fff;
+}
+
+.inicio .contenido .info{
+    padding-bottom: 150px;
+}
+
+.inicio .contenido .info h1 {
+    font-size: 3rem;
+    letter-spacing: 5px;
+}
+
+.inicio .contenido .info h2 {
+    font-weight: normal;
+    font-size: 35px;
+    margin-top: 10px;
+    letter-spacing: 2px;
+} 
+
+.inicio .contenido .foto {
+    position: relative;
+} 
+
+.inicio .contenido .foto img {
+    max-width: 200px;
+    border-radius: 50%;
+    border: 2px solid black;
+    position: absolute;
+    left: 50%;
+    top: -100px;
+    transform: translate(-50%);
+}
+
+/* Generales de sobremi, estudios, antecedentes y contacto */
+
+.estudios, .antecedentes {
+    padding: 80px 0 100px 0;
+    text-align: center;
+}
+
+.contenido .titulo {
+    font-family: "Xanh Mono";
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: gray;
+}
+
+.contenido {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+
+.contenido fieldset {
+    margin-top: 20px ;
+    padding: 10px;
+    border-left: 5px solid gray;
+    border-bottom: 5px solid gray;
+}
+
+.contenido fieldset ul {
+    list-style-type:none;
+    margin-top: 10px ;
+    padding: 10px;
+    text-align: left;
+}
+
+.contenido fieldset ul li {
+    margin-top: 10px ;
+    padding: 10px;
+    font-size: 20px;
+    display: flex;
+    justify-content: left;
+}
+    
+.contenido fieldset ul li p {
+    padding-left: 5px;
+}
+
+/* Seccion sobremi */
+
+.sobremi {
+    background-color: #e6e6e6;
+    padding: 140px 0 100px 0;
+    text-align: center;
+}
+
+.sobremi .contenido p {
+    padding-top: 15px;
+    max-width: 700px;
+    margin: auto;
+    color: #666;
+    font-size: 20px;
+}
+/* Seccion estudios */
+
+.estudios {
+    background-color: #e6e6e6;
+}
+
+/* Seccion antecedentes*/
+
+.antecedentes {
+    background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,-3)), url("fondo1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    color: black;
+}
+
+/* Seccion contacto*/
+
+.contacto {
+    background-color: #202020;
+    padding: 140px 0 100px 0;
+    color: #e6e6e6;
+    text-align: center;
+}
+
+.contacto .contenido h3 {
+    text-transform: uppercase;
+    color:dodgerblue;
+    font-size: 20px;
+}
+
+.contacto .contenido .fila {
+    display: flex;
+    justify-content:space-between;
+}
+
+.contacto .contenido .fila .col {
+    margin-top: 50px;
+}
+
+.contacto .contenido .fila .col h4 {
+    color:dodgerblue;
+    margin-bottom: 10px;
+}
+
+/* Seccion Responsive */
+
+@media screen and (max-width:800px) {
+    .inicio .contenido .info {
+        margin-top: 100px;
+    }
+
+    .contenido fieldset ul li {
+        display:block;
+    }
+}
